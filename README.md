@@ -1,30 +1,23 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite - Desafio tecnico
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Desafio
+O objetivo desse projeto é construir uma pequena funcionalidade de listagem e edição de
+dados de cliente.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# O que deve haver nessa funcionalidade proposta?
+● Uma tela com uma lista de clientes, carregados a partir de uma API Rest;
+● Uma modal que permita editar os dados de um cliente selecionado.
 
-## Expanding the ESLint configuration
+# Que ferramentas usar:
+● React
+● Material UI (MUI)
+● Formik
+● Yup
+● Axios
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Conclusão: 
+O desafio proposto acima foi finalizado sem nenhuma grande dificuldade e feito em poucas horas como proposto, a unica coisa que eu mudaria para esse projeto, é a utilização do react query no lugar do axios para fazer o gerenciamento das informações (cache de dados e alguns hooks já prontos). Iniciei um novo projeto com Vite e implantei o Template mui proposto, essa foi a parte mais demorada :) kkk.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+TEMPLATE: https://mui.com/material-ui/getting-started/templates/dashboard/
